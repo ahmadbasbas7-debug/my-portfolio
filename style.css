@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+body{
+    background: linear-gradient(#c13636ba , #2626b5ba);
+    height: 100%;
+    width: 100%;
+}
+.logo{
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo1{
+    width: 200px;
+}
+
+    h2{
+    font-size: 30px;
+    color: #e6e61e;
+}
+.content1{
+    padding: 10px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+}
+.details1{
+    font-size: 40px;
+}
+.img1{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #eadb0367;
+    box-shadow:  0 10px 25px rgb(0 0 0 0.2);
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.toggle-box{
+    display: none;
+}
+.img1{
+    cursor: pointer;
+
+}
+.details1{
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    color: #222222 !important;
+}
+.toggle-box:checked ~ .popup-overlay{
+    display: flex;
+}
+.popup-overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.popup-box{
+    background-color: #ffffff;
+    color: #222222;
+    padding: 35px 25px;
+    border-radius: 15px;
+    border: 3px solid #e6e61e;
+    width: 85%;
+    max-width: 500px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 15px 30px rgb(0 0 0 0.4);
+}
+.close-btn{
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #555555;
+    cursor: pointer;
+}
+.close-btn{
+    color: #ff0000;
+}
+
